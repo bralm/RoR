@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'ro_r/ro_r_items'
+
+  resources :ro_r_lists do
+    resources :ro_r_items
+  end
+  
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -16,7 +22,7 @@ Rails.application.routes.draw do
   #   resources :products
 
 
-  root to: 'users#index'
+  root "ro_r_lists#index"
 
   # Example resource route with options:
   #   resources :products do
