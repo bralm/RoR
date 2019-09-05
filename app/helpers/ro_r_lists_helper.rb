@@ -1,0 +1,2 @@
+module RoRListsHelper
+end

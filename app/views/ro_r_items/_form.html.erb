@@ -1,0 +1,4 @@
+<%= form_for([@ro_r_list, @ro_r_list.ro_r_items.build]) do |f| %>
+ <%= f.text_field :content, placeholder: "New ROR" %>
+ <%= f.submit %>
+<% end %>

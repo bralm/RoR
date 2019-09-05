@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p><p>
+  <strong>Title:</strong>
+  <%= @ro_r_list.title %>
+</p><p>
+  <strong>Description:</strong>
+  <%= @ro_r_list.description %>
+</p><div id="ro_r_items_wrapper">
+ <%= render @ro_r_list.ro_r_items %>
+ <div id="form">
+  <%= render "ro_r_items/form" %>
+ </div>
+</div><%= link_to 'Edit', edit_ro_r_list_path(@ro_r_list) %> |
+<%= link_to 'Back', ro_r_lists_path %>
